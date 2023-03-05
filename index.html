@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+
+    <!-- Bootsrtap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a class="navbar-logo" href="#">LOGO</a>
+      <div class="navbar-nav">
+        <a href="#">HOME</a>
+        <a href="#">WORK</a>
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT ME</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="signUp">SIGN UP</a>
+        <a href="#" id="logIn">LOGIN</a>
+        <a href="#" id="menuBar"><i class="bi bi-list"></i></a>
+      </div>
+    </nav>
+
+    <!-- Landing -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Play Traditional Game</h1>
+        <h3>Experience new traditional game play</h3>
+        <a href="game.html" type="button" class="btn btn-warning">PLAY NOW</a>
+        <p>the story</p>
+        <img src="/img/scroll-down.svg" style="margin-top: 0" alt="as" />
+      </main>
+    </section>
+
+    <!-- Option Section -->
+    <section class="option" id="about">
+      <div class="text-option">
+        <h3>What's So Special?</h3>
+        <h1>THE GAMES</h1>
+      </div>
+      <div class="col">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/img/rockpaperstrategy-1600.png"
+                class="d-block w-100"
+                alt="Rock Paper Strategy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/rockpaperstrategy-1600.png"
+                class="d-block w-100 h-50"
+                alt="Rock Paper Strategy"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/img/rockpaperstrategy-1600.png"
+                class="d-block w-100"
+                alt="Rock Paper Strategy"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container d-flex text-features">
+        <div class="col-6"></div>
+        <div>
+          <div class="row">
+            <div class="col py-5">
+              <h3>What's so special?</h3>
+              <h1>Features</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img src="img/ellipse.svg" alt="" />
+            </div>
+            <div class="col-4">
+              <h2>Traditional Game</h2>
+              <p>
+                If you miss your childhood, we provided many traditional game
+                here
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 py-3">
+              <img src="img/ellipse-outline.svg" alt="" />
+            </div>
+            <div class="col-4 py-3">
+              <h2>Game Suit</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1 py-3">
+              <img src="img/ellipse-outline.svg" alt="" />
+            </div>
+            <div class="col-2 py-3">
+              <h2>Tbd</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements" id="requirements">
+      <div class="container">
+        <div class="row">
+          <div class="col py-5 text-center">
+            <h6>Can My Computer Run this game?</h6>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col">
+            <h1>SYSTEM <br />REQUIREMENTS</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <table class="table p-0 table-bordered">
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <h2 class="spec">os:</h2>
+                    <p>Windows 7 64-bit only (No OSX support at this time)</p>
+                  </th>
+                  <td>
+                    <h2 class="spec">Processor:</h2>
+                    <p>
+                      Intel Core 2 Duo @ 2.4 G.HZ or AMD Athlon X2 @ 2.8 G.HZ
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <h2 class="spec">Memory:</h2>
+                    <p>4 GB RAM</p>
+                  </th>
+                  <td>
+                    <h2 class="spec">Storge:</h2>
+                    <p>8 GB available Space</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <h2 class="spec">Graphics:</h2>
+                    <p>
+                      NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB
+                      Direct 11 (Shader Model 5)
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top score Section -->
+    <section class="top-score" id="top-score">
+      <div class="container">
+        <div class="col" style="margin-top: 25%">
+          <div class="col-4 ms-auto bg-dark">
+            <div class="d-flex">
+              <img
+                src="img/evan-lahti.jpg"
+                style="
+                  width: 65.27px;
+                  height: 65.27px;
+                  border-radius: 50%;
+                  border: 4px solid orange;
+                "
+                alt=""
+              />
+              <div style="margin-left: 20px">
+                <h6>Evan Lahti</h6>
+                <h6>PC Gamer</h6>
+                <p>"One of my gaming highlights of the year".</p>
+                <p>June 18, 2021</p>
+              </div>
+              <div>
+                <img
+                  src="img/twitter-card.png"
+                  style="margin-left: auto"
+                  alt=""
+                />
+              </div>
+              <img src="img/twitter-card.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex" style="margin-top: 20px">
+          <div class="col-6">
+            <h1>TOP SCORES</h1>
+            <p>This top score from various games provided on this platform</p>
+            <button type="button" class="btn btn-warning px-5">See More</button>
+          </div>
+          <div class="col-4 bg-dark">
+            <div class="d-flex">
+              <img
+                src="img/jada-griffin.jpg"
+                style="
+                  width: 65.27px;
+                  height: 65.27px;
+                  border-radius: 50%;
+                  border: 4px solid orange;
+                "
+                alt=""
+              />
+              <div style="margin-left: 20px">
+                <h6>Jada Griffin</h6>
+                <h6>Nerdcreator</h6>
+                <p>
+                  "The next big thing in the world of streaming and survival
+                  games".
+                </p>
+                <p>July 10, 2021</p>
+              </div>
+              <div>
+                <img
+                  src="img/twitter-card.png"
+                  style="margin-left: auto"
+                  alt=""
+                />
+              </div>
+              <img src="img/twitter-card.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col" style="margin-top: 20px">
+            <div class="col-4 ms-auto bg-dark">
+              <div class="d-flex">
+                <img
+                  src="img/aaron-williams.jpg"
+                  style="
+                    width: 65.27px;
+                    height: 65.27px;
+                    border-radius: 50%;
+                    border: 4px solid orange;
+                  "
+                  alt=""
+                />
+                <div style="margin-left: 20px">
+                  <h6>Aaron Williams</h6>
+                  <h6>Upproxx</h6>
+                  <p>
+                    "Snoop Dogg Playing The Wildly Entertaining'SOS' is
+                    Ridiculous".
+                  </p>
+                  <p>December, 24 2018</p>
+                </div>
+                <div>
+                  <img
+                    src="img/twitter-card.png"
+                    style="margin-left: auto"
+                    alt=""
+                  />
+                </div>
+                <img src="img/twitter-card.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="/img/skull.png" alt="" />
+          </div>
+          <div class="col newsletter-text">
+            <h3>Want to stay in touch?</h3>
+            <h1>Newsletter Subcribe</h1>
+            <p>
+              In order to start receiving our news, all you have to do is enter
+              your email address. Everything else will be taken care of by us.
+              We will send you emails containing information about game. We
+              don't spam.
+            </p>
+            <input type="text" value="youremail@example" />
+            <button type="button" class="btn btn-warning px-5">
+              Subscribe now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+      <div class="footer" id="footer">
+        <a href="#main">MAIN</a>
+        <a href="#about">ABOUT</a>
+        <a href="#features">GAME FEATURES</a>
+        <a href="#requirements">SYSTEM REQUIREMENTS</a>
+        <a href="#">QUOTES</a>
+        <a href="#"><img src="/img/facebook.svg" alt="facebook"/></a>
+        <a href="#"><img src="/img/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="/img/vector.svg" alt="youtube" /></a>
+        <a href="#"><img src="/img/twitch.svg" alt="twitch" /></a>
+      </div>
+      <hr />
+      <div class="footer2 d-flex">
+        <div class="credit">
+          <span>&copy;2023, Fauzan Abdul Basith, All Right Reserved</span>
+        </div>
+        <div>
+          <a class="nav-link active" aria-current="page" href="#"
+            >Privasi Policy</a
+          >
+          <a class="nav-link" href="#">Term of Condition</a>
+          <a class="nav-link" href="#">Code of Conduction</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Boortrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My JS -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>

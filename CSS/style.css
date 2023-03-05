@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+/* Navbar */
+.navbar {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1.4rem 7% !important;
+  background-color: rgba(1, 1, 1, 0.5) !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 99999 !important;
+}
+
+.navbar .navbar-logo {
+  font-family: "Open Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+.navbar .navbar-nav {
+  display: inline-block !important;
+  margin: 0 1rem !important;
+
+  font-family: "Open Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  line-height: 1rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+.navbar .navbar-nav a {
+  padding: 0 1.5rem !important;
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(86, 101, 114) !important;
+}
+
+.navbar .navbar-extra a {
+  display: inline-block !important;
+  margin: 0 1rem !important;
+  font-family: "Open Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  line-height: 1rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+.navbar .navbar-extra a:hover {
+  color: rgb(86, 101, 114) !important;
+}
+
+#menuBar {
+  display: none !important;
+}
+
+/* Landing */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  margin-top: 40rem;
+  font-size: 5rem;
+  text-shadow: 1px 1px #333;
+  text-transform: uppercase;
+}
+
+.hero h3 {
+  margin-top: 4rem;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.hero a {
+  margin-top: 5rem;
+  padding: 1rem 5rem;
+  background-color: #ffb548;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #1a1917 !important;
+}
+
+.hero p {
+  margin-top: 35rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  justify-content: end;
+  align-items: end;
+}
+
+.hero img {
+  margin-bottom: 4rem;
+}
+
+/* Option */
+
+.option {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/the-games-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+.option .text-option {
+  padding: 0 3rem;
+}
+.options h3 {
+  margin-top: 0;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.options h1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-left: 2rem;
+}
+.carousel {
+  margin-top: 0;
+  padding: 0 10rem;
+}
+
+/* Features Section */
+.features {
+  background-image: url(/img/features.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.text-features {
+  padding-top: 10rem;
+  align-items: center;
+}
+
+.features h3 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.features h1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.features h2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffb548 !important;
+}
+
+.features p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+/* Requirements Section */
+.requirements {
+  background-image: url(../img/requirements.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.requirements h6 {
+  padding-top: 10rem;
+  align-items: start;
+  text-align: center;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  letter-spacing: 2px;
+}
+
+.requirements h2 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffb548 !important;
+}
+
+.requirements p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.requirements .table {
+  margin-bottom: 10rem;
+}
+
+/* Top Score Section */
+.top-score {
+  background-image: url(/img/top-score-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 10rem;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-image: url(/img/newsletter.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+.newsletter-text {
+  padding-top: 20rem;
+}
+
+.newsletter img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  margin-top: -8rem;
+}
+
+footer a {
+  display: inline-block !important;
+  text-align: center;
+  
+  margin: 0 1rem !important;
+  font-family: "Open Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  line-height: 1rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+footer .footer2 {
+  justify-content: space-between;
+}
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #menuBar {
+    display: inline-block !important;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 30rem;
+    background-color: rgba(1, 1, 1, 0.5);
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  #signUp .active {
+    right: 0;
+  }
+  #logIn .active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  #signUp {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 30rem;
+    background-color: black;
+    height: 100vh;
+  }
+  #logIn {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 30rem;
+    background-color: white;
+    height: 100vh;
+  }
+}
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

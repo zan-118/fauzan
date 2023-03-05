@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/app_style.css" />
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Header -->
+      <header>
+          <nav>
+            <a class="callBack" href="index.html"><</a>
+            <span class="logo"><img src="img/logo 1.png" alt="logo" /></span>
+            <h3>Rock Paper Scissors</h3>
+          </nav>
+        </header>
+      
+      <!-- Content -->
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="text-center mb-4" id="playerChoices">Player 1</h2>
+          <div class="buttons row text-center">
+            <div>
+              <img class="choice" data-value="rock" src="img/batu.png" />
+            </div>
+            <div>
+              <img class="choice" data-value="paper" src="img/kertas.png" />
+            </div>
+            <div>
+              <img class="choice" data-value="scissors" src="img/gunting.png" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-center mb-4" id="computerChoices">COM</h2>
+          <div class="buttons row text-center">
+            <div>
+              <img class="choice" data-value="rock" src="img/batu.png" />
+            </div>
+            <div>
+              <img class="choice" data-value="paper" src="img/kertas.png" />
+            </div>
+            <div>
+              <img class="choice" data-value="scissors" src="img/gunting.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result -->
+
+      <div class="result text-center">
+        <span id="result">VS</span>
+      </div>
+
+      <!-- Reset button -->
+      
+      <div class="row">
+        <div class="col text-center">
+          <img class="reset mt-4" id="reset" src="img/refresh.png"></img>
+        </div>
+      </div>
+    </div>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
