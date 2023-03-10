@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Landing page</title>
-
+  
   <!-- Bootstrap CSS -->
-
+  
   <link
   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
   rel="stylesheet"
@@ -15,37 +15,67 @@
   />
   
   <!-- My Style -->
-
-  <link rel="stylesheet" href="CSS/style.css" />
+  
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- Navbar -->
   
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">LOGO</a>
-      <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <div class="navbar-nav me-auto mb-2 mb-lg-0">
-        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-        <a class="nav-link" href="#">WORK</a>
-        <a class="nav-link" href="#">CONTACT</a>
-        <a class="nav-link" href="#">ABOUT ME</a>
-      </div>
-      <a class="btn" type="submit">SIGNUP</a>
-      <a class="btn" type="submit">LOGIN</a>
-    </div>
+  <nav
+  class="navbar navbar-expand-lg navbar-dark fixed-top"
+  aria-label="Offcanvas navbar large"
+  >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">LOGO</a>
+    <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasNavbar2"
+    aria-controls="offcanvasNavbar2"
+    >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+  class="offcanvas offcanvas-end text-bg-dark"
+  data-bs-scroll="true"
+  tabindex="-1"
+  id="offcanvasNavbar2"
+  aria-labelledby="offcanvasNavbar2Label"
+  >
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">MENU</h5>
+    <button
+    type="button"
+    class="btn-close btn-close-white"
+    data-bs-dismiss="offcanvas"
+    aria-label="Close"
+    ></button>
   </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">WORK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SIGN UP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">LOGIN</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
 </nav>
 
 <!-- Hero Section -->
@@ -62,41 +92,88 @@
 
 <!-- Gameplay Section -->
 
-<section class="gameplay" id="about">
-  <div class="row">
-    <div class="col">
+<section id="gameplay">
+  <div class="container d-flex">
+    <div class="gameplay-text">
       <h3>What's so special?</h3>
-      <h1>The games</h1>
+      <h1>THE GAMES</h1>
     </div>
-    <div class="col">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/rockpaperstrategy-1600.png" class="d-block w-100" height="300" width="400" alt="Rock Paper Strategy">
-          </div>
-          <div class="carousel-item">
-            <img src="img/rockpaperstrategy-1600.png" class="d-block w-100" height="300" width="400" alt="Rock Paper Strategy">
-          </div>
-          <div class="carousel-item">
-            <img src="img/rockpaperstrategy-1600.png" class="d-block w-100" height="300" width="400" alt="Rock Paper Strategy">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev" aria-hidden="true"><img src="img/switch-left.svg" alt=""></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next"  aria-hidden="true"><img src="img/switch-right.svg" alt=""></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <!--  Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+        ></button>
+        <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+        ></button>
+        <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+        ></button>
       </div>
-    </div>
-  </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+          src="img/rockpaperstrategy-1600.png"
+          class="d-block w-100"
+          height="400"
+          width="800"
+          alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+          src="img/rockpaperstrategy-1600.png"
+          class="d-block w-100"
+          height="400"
+          width="800"
+          alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+          src="img/rockpaperstrategy-1600.png"
+          class="d-block w-100"
+          height="400"
+          width="800"
+          alt="..."
+          />
+        </div>
+      </div>
+      <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+      >
+      <span class="carousel-control-prev" aria-hidden="true"
+      ><img src="img/switch-left.svg" alt=""
+      /></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+    >
+    <span class="carousel-control-next" aria-hidden="true"
+    ><img src="img/switch-right.svg" alt=""
+    /></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 </div>
 </section>
 
@@ -104,7 +181,7 @@
 
 <section class="features" id="features">
   <div class="container d-flex text-features">
-    <div class="col-6"></div>
+    <div class="col"></div>
     <div>
       <div class="row">
         <div class="col py-5">
@@ -112,11 +189,11 @@
           <h1>Features</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row py-3">
         <div class="col-1">
           <img src="img/ellipse.svg" alt="" />
         </div>
-        <div class="col-4">
+        <div class="col-6">
           <h2>Traditional Game</h2>
           <p>
             If you miss your childhood, we provided many traditional game
@@ -124,19 +201,19 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-1 py-3">
+      <div class="row py-3">
+        <div class="col-1">
           <img src="img/ellipse-outline.svg" alt="" />
         </div>
-        <div class="col-4 py-3">
+        <div class="col-4">
           <h2>Game Suit</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-1 py-3">
+      <div class="row py-3">
+        <div class="col-1">
           <img src="img/ellipse-outline.svg" alt="" />
         </div>
-        <div class="col-2 py-3">
+        <div class="col-2">
           <h2>Tbd</h2>
         </div>
       </div>
@@ -144,7 +221,7 @@
   </div>
 </section>
 
-<!-- Requirements Section -->
+<!--Requirements Section-->
 
 <section class="requirements" id="requirements">
   <div class="container">
@@ -203,106 +280,51 @@
 <!-- Top score Section -->
 
 <section class="top-score" id="topScore">
-  <div class="container">
-    <div class="col" style="margin-top: 25%">
-      <div class="col-4 ms-auto bg-dark">
-        <div class="d-flex">
-          <img
-          src="img/evan-lahti.jpg"
-          style="
-          width: 65.27px;
-          height: 65.27px;
-          border-radius: 50%;
-          border: 4px solid orange;
-          "
-          alt=""
-          />
-          <div style="margin-left: 20px">
+  <div class="container d-flex">
+    <div class="col-6 text-column">
+      <h1>TOP SCORES</h1>
+      <p>This top score from various games provided on this platform</p>
+      <button type="button" class="btn btn-warning px-5">See More</button>
+    </div>
+    <div class="container align-content-end">
+      <div class="d-flex flex-column">
+        <div class="col-8 bg-dark d-flex m-5">
+          <div class="col-3">
+            <img class="review" src="img/evan-lahti.jpg" alt="" /><br />
+            <span>June 18, 2021</span>
+          </div>
+          <div>
             <h6>Evan Lahti</h6>
             <h6>PC Gamer</h6>
             <p>"One of my gaming highlights of the year".</p>
-            <p>June 18, 2021</p>
+          </div>
+        </div>
+        <div class="col-8 bg-dark d-flex">
+          <div class="col-3">
+            <img class="review" src="img/jada-griffin.jpg" alt="" /><br />
+            <span>June 18, 2021</span>
           </div>
           <div>
-            <img
-            src="img/twitter-card.png"
-            style="margin-left: auto"
-            alt=""
-            />
-          </div>
-          <img src="img/twitter-card.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="col d-flex" style="margin-top: 20px">
-      <div class="col-6">
-        <h1>TOP SCORES</h1>
-        <p>This top score from various games provided on this platform</p>
-        <button type="button" class="btn btn-warning px-5">See More</button>
-      </div>
-      <div class="col-4 bg-dark">
-        <div class="d-flex">
-          <img
-          src="img/jada-griffin.jpg"
-          style="
-          width: 65.27px;
-          height: 65.27px;
-          border-radius: 50%;
-          border: 4px solid orange;
-          "
-          alt=""
-          />
-          <div style="margin-left: 20px">
-            <h6>Jada Griffin</h6>
-            <h6>Nerdcreator</h6>
+            <h6>Jada Griffing</h6>
+            <h6>Nerdreactor</h6>
             <p>
               "The next big thing in the world of streaming and survival
               games".
             </p>
-            <p>July 10, 2021</p>
+          </div>
+        </div>
+        <div class="col-8 bg-dark d-flex m-5">
+          <div class="col-3">
+            <img class="review" src="img/aaron-williams.jpg" alt="" /><br />
+            <span>June 18, 2021</span>
           </div>
           <div>
-            <img
-            src="img/twitter-card.png"
-            style="margin-left: auto"
-            alt=""
-            />
-          </div>
-          <img src="img/twitter-card.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="col" style="margin-top: 20px">
-        <div class="col-4 ms-auto bg-dark">
-          <div class="d-flex">
-            <img
-            src="img/aaron-williams.jpg"
-            style="
-            width: 65.27px;
-            height: 65.27px;
-            border-radius: 50%;
-            border: 4px solid orange;
-            "
-            alt=""
-            />
-            <div style="margin-left: 20px">
-              <h6>Aaron Williams</h6>
-              <h6>Upproxx</h6>
-              <p>
-                "Snoop Dogg Playing The Wildly Entertaining'SOS' is
-                Ridiculous".
-              </p>
-              <p>December, 24 2018</p>
-            </div>
-            <div>
-              <img
-              src="img/twitter-card.png"
-              style="margin-left: auto"
-              alt=""
-              />
-            </div>
-            <img src="img/twitter-card.png" alt="" />
+            <h6>Aarom Williams</h6>
+            <h6>upprox</h6>
+            <p>
+              "Snopp Dog Playing The Wildly Entertaining 'SOS' is
+              Ridiculous".
+            </p>
           </div>
         </div>
       </div>
@@ -316,7 +338,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <img src="/img/skull.png"  alt="" />
+        <img src="/img/skull.png" width="300" height="400" alt="" />
       </div>
       <div class="col newsletter-text">
         <h3>Want to stay in touch?</h3>
@@ -327,10 +349,21 @@
           We will send you emails containing information about game. We
           don't spam.
         </p>
-        <input type="text" value="youremail@example" />
-        <button type="button" class="btn btn-warning px-5">
-          Subscribe now
-        </button>
+        <form class="row g-3">
+          <div class="col-auto mb-3">
+            <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-warning mb-3">
+              Subscribe Now
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -338,26 +371,34 @@
 
 <!-- Footer -->
 
-<footer class="container ms-auto">
+<footer class="container">
   <div class="footer" id="footer">
     <a class="footer-link" href="#main">MAIN</a>
-    <a href="#about">ABOUT</a>
-    <a href="#features">GAME FEATURES</a>
-    <a href="#requirements">SYSTEM REQUIREMENTS</a>
-    <a href="#topScore">QUOTES</a>
-    <a href="#"><img src="/img/facebook.svg" alt="facebook"/></a>
-    <a href="#"><img src="/img/twitter.svg" alt="twitter" /></a>
-    <a href="#"><img src="/img/vector.svg" alt="youtube" /></a>
-    <a href="#"><img src="/img/twitch.svg" alt="twitch" /></a>
+    <a class="footer-link" href="#about">ABOUT</a>
+    <a class="footer-link" href="#features">GAME FEATURES</a>
+    <a class="footer-link" href="#requirements">SYSTEM REQUIREMENTS</a>
+    <a class="footer-link" href="#topScore">QUOTES</a>
+    <a class="footer-link" href="#"
+    ><img src="/img/facebook.svg" alt="facebook"
+    /></a>
+    <a class="footer-link" href="#"
+    ><img src="/img/twitter.svg" alt="twitter"
+    /></a>
+    <a class="footer-link" href="#"
+    ><img src="/img/vector.svg" alt="youtube"
+    /></a>
+    <a class="footer-link" href="#"
+    ><img src="/img/twitch.svg" alt="twitch"
+    /></a>
   </div>
   <hr />
-  <div class="footer2 d-flex">
+  <div class="footer2 d-flex justify-content-between">
     <div class="credit">
       <span>&copy;2023, Fauzan Abdul Basith, All Right Reserved</span>
     </div>
-    <div>
+    <div class="tos d-flex">
       <a class="nav-link active" aria-current="page" href="#"
-        >Privasi Policy</a
+      >Privasi Policy</a
       >
       <a class="nav-link" href="#">Term of Condition</a>
       <a class="nav-link" href="#">Code of Conduction</a>
@@ -365,16 +406,14 @@
   </div>
 </footer>
 
-
-
-
-
-
 <!-- Bootstrap JS -->
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 crossorigin="anonymous"
 ></script>
+
+<!-- My Script -->
+<script src="js/script.js"></script>
 </body>
 </html>
