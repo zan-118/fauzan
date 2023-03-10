@@ -11,11 +11,17 @@ body {
 
 
 /* Navbar */
-
 .navbar {
-  padding: 1.4rem !important;
-  background-color: rgba(1, 1, 1, 0.5);
-  color: #fff !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1.4rem 7% !important;
+  background-color: rgba(1, 1, 1, 0.5) !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 99999 !important;
 }
 
 .navbar-brand {
@@ -27,26 +33,53 @@ body {
   letter-spacing: 0.1em;
 }
 
+.navbar .navbar-nav {
+  display: inline-block !important;
+  margin: 0 1rem !important;
 
-.navbar a {
- 
   font-family: "Open Sans" !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   line-height: 1rem !important;
   letter-spacing: 0.1em !important;
-  color: #fff;
 }
 
-/* Hero */
+.navbar .navbar-nav a {
+  padding: 0 1.5rem !important;
+}
+
+.navbar .navbar-nav a:hover {
+  color: rgb(86, 101, 114) !important;
+}
+
+.navbar .navbar-extra a {
+  display: inline-block !important;
+  margin: 0 1rem !important;
+  font-family: "Open Sans" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 0.8rem !important;
+  line-height: 1rem !important;
+  letter-spacing: 0.1em !important;
+}
+
+.navbar .navbar-extra a:hover {
+  color: rgb(86, 101, 114) !important;
+}
+
+#menuBar {
+  display: none !important;
+}
+
+/* Landing */
 
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/img/main-bg.jpg");
+  background-image: url(../img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -101,17 +134,23 @@ body {
 
 /* Gameplay  Section */
 
-#gameplay {
+.option {
   min-height: 100vh;
-  padding: 15rem 0;
-  background-image: url("/img/the-games-bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/the-games-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   bottom: 0;
 }
 
-.gameplay-text {
+.option .text-option {
+  padding: 0 3rem;
+}
+.options h3 {
+  margin-top: 0;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -123,8 +162,11 @@ body {
   letter-spacing: 2px;
 }
 
-.gameplay-text h1 {
-  font-size: 4rem;
+.options h1 {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 5rem;
   line-height: 4rem;
   letter-spacing: 3px;
 }
@@ -134,11 +176,8 @@ body {
 }
 
 /* Features Section */
-
-#features {
-  min-height: 100vh;
-  padding: 10rem 0;
-  background-image: url("/img/features.jpg");
+.features {
+  background-image: url(../img/features.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -233,9 +272,8 @@ body {
 }
 
 /* Top Score Section */
-
-#topScore {
-  background-image: url(/img/top-score-bg.png);
+.top-score {
+  background-image: url(../img/top-score-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -264,13 +302,15 @@ body {
 }
 
 /* Newsletter Section */
-
-#newsletter {
-  background-image: url('/img/newsletter.png');
+.newsletter {
+  background-image: url(../img/newsletter.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
 }
 
 .newsletter .container {
@@ -289,8 +329,7 @@ body {
   margin-top: -8rem;
 }
 
-footer  a {
-  text-decoration: none !important;
+footer a {
   display: inline-block !important;
   margin: 0 0.5rem !important;
   font-family: "Open Sans" !important;
@@ -299,12 +338,6 @@ footer  a {
   font-size: 0.8rem !important;
   line-height: 1rem !important;
   letter-spacing: 0.1em !important;
-}
-
-.footer-link {
-  margin: auto;
-  text-decoration: none;
-  color: #fff;
 }
 
 footer .footer2 {
