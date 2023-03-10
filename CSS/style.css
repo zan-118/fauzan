@@ -43,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/img/main-bg.jpg");
+  background-image: url('../img/main-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -101,7 +101,7 @@ body {
 #gameplay {
   min-height: 100vh;
   padding: 15rem 0;
-  background-image: url("/img/the-games-bg.jpg");
+  background-image: url('../img/the-games-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -135,7 +135,7 @@ body {
 #features {
   min-height: 100vh;
   padding: 10rem 0;
-  background-image: url("/img/features.jpg");
+  background-image: url('../img/features.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ body {
 /* Requirements Section */
 
 .requirements {
-  background-image: url(../img/requirements.png);
+  background-image: url('../img/requirements.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -232,7 +232,7 @@ body {
 /* Top Score Section */
 
 #topScore {
-  background-image: url(/img/top-score-bg.png);
+  background-image: url('../img/top-score-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -263,7 +263,7 @@ body {
 /* Newsletter Section */
 
 #newsletter {
-  background-image: url("/img/newsletter.png");
+  background-image: url('../img/newsletter.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
