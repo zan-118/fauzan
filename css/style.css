@@ -237,6 +237,7 @@ footer {
 }
 
 .footer-link {
+  margin: 0 0.5rem;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
