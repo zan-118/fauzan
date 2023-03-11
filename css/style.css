@@ -104,7 +104,7 @@
 /* Requirements */
 
 .requirements {
-  
+  padding-baotom: 5rem;
   background-image: url("../img/requirements.png");
   background-repeat: no-repeat;
   background-size: cover;
