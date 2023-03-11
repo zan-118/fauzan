@@ -286,16 +286,3 @@ footer .footer2 {
   justify-content: space-between;
 }
 
-/* Tablet */
-@media (max-width: 768px) {
-  html {
-    font-size: 62.5%;
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-  html {
-    font-size: 55%;
-  }
-}
