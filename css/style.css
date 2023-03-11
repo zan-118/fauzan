@@ -104,7 +104,7 @@
 /* Requirements */
 
 .requirements {
-  padding-baotom: 5rem;
+  padding-bottom: 5rem;
   background-image: url("../img/requirements.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,11 +153,12 @@
 /* Quotes */
 
 .quotes {
+  min-height: 100vh;
   background-image: url("../img/top-score-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 7rem 0;
+  padding: 5rem 0;
 }
 
 .quotes .text-column {
@@ -191,6 +192,7 @@
 /* Newsletter */
 
 .newsletter {
+  min-height: 100vh;
   background-image: url("../img/newsletter.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,7 +233,7 @@ footer {
 }
 
 .footer-link {
-  padding: 1.4rem 7%;
+  padding: 0 7%;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
